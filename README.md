@@ -15,7 +15,8 @@ This library provides a vec that allows mutable borrows to different elements at
 Add the following to `Cargo.toml`
 
 ```toml
-rt_vec = "0.1.0"
+rt_vec = "0.1.0" # or
+rt_vec = { version = "0.1.0", features = ["unsafe_debug"] }
 ```
 
 In code:
@@ -62,6 +63,13 @@ println!("a_try_borrow_mut: {}", exists); // prints "Err"
 ```
 
 
+### Features
+
+#### `"unsafe_debug"`
+
+Enables the [`"unsafe_debug"`] feature of [`rt_ref`].
+
+
 ## License
 
 Licensed under either of
@@ -78,5 +86,7 @@ Unless you explicitly state otherwise, any contribution intentionally submitted 
 
 
 [`rt_map`]: https://crates.io/crates/rt_map
+[`rt_ref`]: https://crates.io/crates/rt_ref
+[`"unsafe_debug"`]: https://github.com/azriel91/rt_ref#unsafe_debug
 [LICENSE-APACHE]: LICENSE-APACHE
 [LICENSE-MIT]: LICENSE-MIT

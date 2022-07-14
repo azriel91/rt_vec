@@ -9,7 +9,8 @@
 //! Add the following to `Cargo.toml`
 //!
 //! ```toml
-//! rt_vec = "0.1.0"
+//! rt_vec = "0.1.0" # or
+//! rt_vec = { version = "0.1.0", features = ["unsafe_debug"] }
 //! ```
 //!
 //! In code:
@@ -55,7 +56,16 @@
 //! println!("a_try_borrow_mut: {}", exists); // prints "Err"
 //! ```
 //!
+//!
+//! ### Features
+//!
+//! #### `"unsafe_debug"`
+//!
+//! Enables the [`"unsafe_debug"`] feature of [`rt_ref`].
+//!
+//!
 //! [`rt_map`]: https://crates.io/crates/rt_map
+//! [`"unsafe_debug"`]: https://github.com/azriel91/rt_ref#unsafe_debug
 
 // Re-exports
 pub use rt_ref::{BorrowFail, Cell, CellRef, CellRefMut, Ref, RefMut};
