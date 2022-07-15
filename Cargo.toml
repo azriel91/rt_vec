@@ -1,6 +1,6 @@
 [package]
 name = "rt_vec"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["Azriel Hoh <azriel91@gmail.com>"]
 edition = "2021"
 description = "Runtime managed mutable borrowing from a vec."

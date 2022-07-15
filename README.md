@@ -15,8 +15,8 @@ This library provides a vec that allows mutable borrows to different elements at
 Add the following to `Cargo.toml`
 
 ```toml
-rt_vec = "0.1.0" # or
-rt_vec = { version = "0.1.0", features = ["unsafe_debug"] }
+rt_vec = "0.1.1" # or
+rt_vec = { version = "0.1.1", features = ["unsafe_debug"] }
 ```
 
 In code:
